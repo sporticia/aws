@@ -8,3 +8,13 @@ terraform {
     }
   }
 }
+
+provider "aws" {
+  # Configuration options
+  default_tags {
+    tags = {
+      Owner      = "scott"
+      CostCenter = "0000"
+    }
+  }
+}
